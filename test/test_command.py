@@ -65,6 +65,7 @@ class CallConfig(object):
     ]
     main = None
     auto_fullscreen = True
+    focus_on_mapped_windows = True
 
 
 call_config = pytest.mark.parametrize("qtile", [CallConfig], indirect=True)
@@ -193,6 +194,7 @@ class ServerConfig(object):
         )
     ]
     main = None
+    focus_on_mapped_windows = True
 
 
 server_config = pytest.mark.parametrize("qtile", [ServerConfig], indirect=True)

@@ -1,0 +1,3 @@
+[submodule "qtile-examples"]
+	path = qtile-examples
+	url = https://github.com/qtile/qtile-examples.git

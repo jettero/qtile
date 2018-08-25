@@ -39,7 +39,8 @@ class CheckCairoXcb(install):
             from cairocffi import cairo
             cairo.cairo_xcb_surface_create
             return True
-        except AttributeError:
+        except AttributeError as e:
+            print("error trying to load cairo.cairo_xcb_surface_create: {}".format(e))
             return False
 
     def finalize_options(self):
